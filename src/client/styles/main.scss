@@ -1,0 +1,63 @@
+body {
+	width: 500px;
+	display: grid;
+	grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: "hd" "sc" "ft";
+    border: 2px solid #ececec;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+header {
+	text-align: center;
+    grid-area: hd;
+}
+
+section {
+	grid-area: sc;
+}
+
+footer {
+	grid-area: ft;
+}
+
+::placeholder {
+	font-size: 16px;
+	color: #666;
+}
+
+textarea,
+input,
+select {
+	width: 478px;
+	border: 1px solid #ececec;
+	padding: 10px;
+}
+
+select {
+	width: 330px;
+}
+
+.results {
+	display: none;
+}
+
+.results-box {
+	background: #ececec;
+	padding: 10px;
+}
+
+span {
+	text-decoration: underline;
+}
+
+.error-text {
+	display: none;
+	color: red;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.source-url {
+	display: none;
+}
