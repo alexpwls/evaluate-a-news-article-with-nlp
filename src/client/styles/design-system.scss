@@ -1,3 +1,9 @@
+$font-stack: 'PT Serif', serif;
+$main-color: #6633EE;
+$font-color: #333;
+$grey-color: #666;
+$lightgrey-color: #ececec;
+
 h1,
 h2,
 h3,
@@ -13,24 +19,20 @@ label,
 textarea,
 ::placeholder,
 select {
-	font-family: 'PT Serif', serif;
-	color: #333;
+	font-family: $font-stack;
+	color: $font-color;
 }
 
 .purple {
-	color: #6633EE;
+	color: $main-color;
 }
 
 .lightgrey {
-	background-color: #ececec;
-}
-
-.black {
-	color: #333;
+	background-color: $lightgrey-color;
 }
 
 a {
-	color: #666;
+	color: $grey-color;
 }
 
 .center {
@@ -53,7 +55,7 @@ button {
 }
 
 input, select {
-	border: 1px solid #ececec;
+	border: 1px solid $lightgrey-color;
 	padding-left: 5px;
 	width: 250px;
 	font-size: 16px;
@@ -61,7 +63,7 @@ input, select {
 
 button {
 	width: 100%;
-	background-color: #6633EE;
+	background-color: $main-color;
 	color: #fff;
 	border: none;
 	text-transform: uppercase;
@@ -72,19 +74,19 @@ button {
 }
 
 button:hover {
-	background-color: #666;
+	background-color: $grey-color;
 }
 
 .greyBtn {
-	background-color: #ececec;
-	border: 1px solid #666;
+	background-color: $lightgrey-color;
+	border: 1px solid $grey-color;
 	margin-bottom: 10px;
-	color: #333;
+	color: $font-color;
 }
 
 .greyBtn:hover {
-	background-color: #ececec;
-	border: 1px solid #6633EE;
+	background-color: $lightgrey-color;
+	border: 1px solid $main-color;
 }
 
 .logo {
@@ -98,10 +100,14 @@ button:hover {
 h1 a,
 h3 a {
 	text-decoration: none;
-	color: #333;
+	color: $font-color;
 }
 
 footer {
 	text-align: center;
 }
 
+::placeholder {
+	font-size: 16px;
+	color: $grey-color;
+}

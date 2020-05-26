@@ -3,7 +3,6 @@ const errorText = document.getElementById('error-text');
 export function urlHandleSubmit(event) {
     event.preventDefault()
     errorText.style.display = "none";
-    // Client.checkForName(formText)
     let sentimentUrl = document.getElementById('sentiment-url').value;
     if (sentimentUrl) {
         const url = 'http://localhost:8081/sentiment-url';

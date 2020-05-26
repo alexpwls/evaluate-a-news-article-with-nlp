@@ -1,9 +1,11 @@
+@import "design-system";
+
 body {
 	width: 500px;
 	display: grid;
 	grid-template-rows: 100px 1fr 50px;
     grid-template-areas: "hd" "sc" "ft";
-    border: 2px solid #ececec;
+    border: 2px solid $lightgrey-color;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -21,16 +23,11 @@ footer {
 	grid-area: ft;
 }
 
-::placeholder {
-	font-size: 16px;
-	color: #666;
-}
-
 textarea,
 input,
 select {
 	width: 478px;
-	border: 1px solid #ececec;
+	border: 1px solid $lightgrey-color;
 	padding: 10px;
 }
 
@@ -43,7 +40,7 @@ select {
 }
 
 .results-box {
-	background: #ececec;
+	background: $lightgrey-color;
 	padding: 10px;
 }
 
