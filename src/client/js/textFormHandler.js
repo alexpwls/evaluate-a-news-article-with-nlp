@@ -5,7 +5,8 @@ function textHandleSubmit(event) {
     errorText.style.display = "none";
     let sentimentText = document.getElementById('sentiment-text').value;
     if (sentimentText) {
-        const url = 'http://localhost:8081/sentiment-text';
+        // const url = 'http://localhost:8081/sentiment-text';
+        const url = 'http://206.189.229.116/sentiment-text';
         fetch(url, {
             method: 'POST', 
             credentials: 'same-origin', 
