@@ -1,7 +1,7 @@
 # Evaluate a news article with Natural Language Processing ![alt text][logo]
 [logo]: https://alexpwls.github.io/personal-blog-website/images/favicon/favicon-16x16.png "Purple dot"
 
-Demo link: []( "demo link")
+Demo link: [http://206.189.229.116/](http://206.189.229.116/ "demo link")
 ---
 
 ## Description:
