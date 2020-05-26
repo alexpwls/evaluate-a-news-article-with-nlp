@@ -43,7 +43,7 @@
                 <h2>Custom text</h2>
                 <form class="" onsubmit="return Client.textHandleSubmit(event)">
                     <textarea id="sentiment-text" placeholder="Enter a custom text here" rows="4"></textarea>
-                    <a href="#" class="button" onclick="return Client.textHandleSubmit(event)">Submit</a>
+                    <button id="textButton">Submit</a>
                 </form>
             </section>
 
@@ -53,7 +53,7 @@
                     <label for="sentiment-url">Paste the URL here:</label>
                     <input type="text" id="sentiment-url" name="sentiment-url" placeholder="Example: https://techcrunch.com/2015/07/16/microsoft-will-never-give-up-on-mobile" />
                     <p>Note: Grab an article on <a href="https://techcrunch.com/" target="_blank" alt="TechCrunch" title="TechCrunch">TechCrunch</a> for testing or generate a random article by clicking <a href="#" onclick="return Client.randomArticle(event)">here</a>.</p>
-                    <a href="#" class="button" onclick="return Client.urlHandleSubmit(event)">Submit</a>
+                    <button id="urlButton">Submit</a>
                 </form>
             </section>
 
@@ -73,7 +73,9 @@
         <footer>
             <p>NLP lab <img class="logo-footer" alt="Logo" title="Purple dot" /> &copy; 2020</p>
         </footer>
-
+        <script>
+            
+        </script>
         <script>
             // Check that service workers are supported
             if ('serviceWorker' in navigator) {

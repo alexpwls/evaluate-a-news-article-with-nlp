@@ -14,6 +14,9 @@ logoImg.src = logoIcon;
 var logoFooterImg = document.querySelector('.logo-footer');
 logoFooterImg.src = logoIcon;
 
+document.getElementById('textButton').addEventListener('click', textHandleSubmit);
+document.getElementById('urlButton').addEventListener('click', urlHandleSubmit);
+
 export {
     sourceSelector,
     textHandleSubmit,
