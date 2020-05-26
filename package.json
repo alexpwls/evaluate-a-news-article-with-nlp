@@ -1,5 +1,5 @@
 {
-  "name": "Evaluate a news article with Natural Language Processing (NLP)",
+  "name": "evaluate-a-news-article-with-nlp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,14 @@
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "rm -rf dist && webpack-dev-server --config webpack.dev.js --open"
   },
-  "keywords": [],
+  "keywords": [
+    "NLP",
+    "News",
+    "article"
+  ],
   "author": "Alex Pauwels",
   "license": "ISC",
-  "description": "",
+  "description": "Project four of Udacity Front-end developer nanodegree",
   "dependencies": {
     "@babel/runtime": "^7.9.6",
     "aylien_textapi": "^0.7.0",
@@ -42,5 +46,9 @@
     "supertest": "^4.0.2",
     "url-loader": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpwls/evaluate-a-news-article-with-nlp"
   }
 }
