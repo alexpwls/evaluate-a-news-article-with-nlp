@@ -1,6 +1,6 @@
 const errorText = document.getElementById('error-text');
 
-export function sourceSelector(event) {
+function sourceSelector(event) {
 
     event.preventDefault()
 
@@ -16,3 +16,5 @@ export function sourceSelector(event) {
         document.querySelector('.results').style.display = "none";
     }
 }
+
+export { sourceSelector };

@@ -6,8 +6,10 @@ const articles = ["https://techcrunch.com/2020/05/22/startup-battlefield-is-goin
     "https://techcrunch.com/2020/05/23/hackers-iphone-new-jailbreak/",
     "https://techcrunch.com/2020/05/23/elon-musk-the-tesla-cybertruck-isnt-getting-any-smaller/"];
 
-export function randomArticle(event) {
+function randomArticle(event) {
     event.preventDefault()
     let randomItem = articles[Math.floor(Math.random()*articles.length)];
     document.getElementById('sentiment-url').value = randomItem;
 }
+
+export { randomArticle };

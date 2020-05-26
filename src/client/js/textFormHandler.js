@@ -1,6 +1,6 @@
 const errorText = document.getElementById('error-text');
 
-export function textHandleSubmit(event) {
+function textHandleSubmit(event) {
     event.preventDefault()
     errorText.style.display = "none";
     let sentimentText = document.getElementById('sentiment-text').value;
@@ -29,3 +29,5 @@ export function textHandleSubmit(event) {
     }
 
 }
+
+export { textHandleSubmit };

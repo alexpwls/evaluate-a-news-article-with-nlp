@@ -1,6 +1,6 @@
 const errorText = document.getElementById('error-text');
 
-export function urlHandleSubmit(event) {
+function urlHandleSubmit(event) {
     event.preventDefault()
     errorText.style.display = "none";
     let sentimentUrl = document.getElementById('sentiment-url').value;
@@ -33,3 +33,5 @@ export function urlHandleSubmit(event) {
         errorText.style.display = "block";
     }
 }
+
+export { urlHandleSubmit };
