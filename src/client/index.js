@@ -2,6 +2,7 @@ import { sourceSelector } from './js/sourceSelector'
 import { textHandleSubmit } from './js/textFormHandler'
 import { urlHandleSubmit } from './js/urlFormHandler'
 import { randomArticle } from './js/randomArticle'
+import { checkURL } from './js/checkValidUrl'
 
 import './styles/main.scss'
 
@@ -17,5 +18,6 @@ export {
     sourceSelector,
     textHandleSubmit,
     urlHandleSubmit,
-    randomArticle
+    randomArticle,
+    checkURL
 }

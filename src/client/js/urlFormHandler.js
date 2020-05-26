@@ -4,7 +4,7 @@ function urlHandleSubmit(event) {
     event.preventDefault()
     errorText.style.display = "none";
     let sentimentUrl = document.getElementById('sentiment-url').value;
-    if (sentimentUrl) {
+    if (Client.checkURL(sentimentUrl)) {
         const url = 'http://localhost:8081/sentiment-url';
         fetch(url, {
             method: 'POST', 
@@ -29,7 +29,7 @@ function urlHandleSubmit(event) {
             }
         })
     } else {
-        errorText.textContent = "Please enter a URL.";
+        errorText.textContent = "Please enter a valid URL.";
         errorText.style.display = "block";
     }
 }

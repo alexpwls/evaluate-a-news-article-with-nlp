@@ -45,6 +45,6 @@ module.exports = {
             patterns: [
               { from: "./src/client/images", to: "images" },
             ],
-          }),
+        }),
     ]
 }
