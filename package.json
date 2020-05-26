@@ -1,5 +1,5 @@
 {
-  "name": "example-project",
+  "name": "Evaluate a news article with Natural Language Processing (NLP)",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "build-dev": "rm -rf dist && webpack-dev-server --config webpack.dev.js --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alex Pauwels",
   "license": "ISC",
   "description": "",
   "dependencies": {

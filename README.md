@@ -22,6 +22,8 @@ Then there are a few commands for each mode of the project:
 * npm run build-prod (production mode of WebPack)
 * npm run build-dev (development mode of WebPack)
 
+Before you run a project you can also execute test scripts using the command "npm run test".
+
 For more information about each of the WebPack configurations you can check the webpack.dev.js or webpack.prod.js configuration files.
 
 The demo link is installed using a Digital Ocean Droplet, more information about that [https://marketplace.digitalocean.com/apps/nodejs/](here "https://marketplace.digitalocean.com/apps/nodejs/").
