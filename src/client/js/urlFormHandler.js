@@ -6,7 +6,7 @@ function urlHandleSubmit(event) {
     let sentimentUrl = document.getElementById('sentiment-url').value;
     if (Client.checkURL(sentimentUrl)) {
         const url = 'http://localhost:8081/sentiment-url';
-        const url = 'http://206.189.229.116:8081/sentiment-url';
+        // const url = 'http://206.189.229.116:8081/sentiment-url';
         fetch(url, {
             method: 'POST', 
             credentials: 'same-origin', 
