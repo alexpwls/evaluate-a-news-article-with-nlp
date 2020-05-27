@@ -1,12 +1,10 @@
-const errorText = document.getElementById('error-text');
-
 function urlHandleSubmit(event) {
+    const errorText = document.getElementById('error-text');
     event.preventDefault()
     errorText.style.display = "none";
     let sentimentUrl = document.getElementById('sentiment-url').value;
     if (Client.checkURL(sentimentUrl)) {
         const url = 'http://localhost:8081/sentiment-url';
-        // const url = 'http://206.189.229.116:8081/sentiment-url';
         fetch(url, {
             method: 'POST', 
             credentials: 'same-origin', 
